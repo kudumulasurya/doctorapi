@@ -48,3 +48,7 @@ dummy_doctors = [
 def get_doctors():
     return dummy_doctors
 
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to the Doctor API! Access /doctors for data."}
+
